@@ -214,30 +214,26 @@ li {
 }
 
 /* Іконки хедера */
-.contact-item::before{
-  display: inline-block;
-  content: '';
-  margin-right: 10px;
-  /* outline: 1px solid red; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.button-mail{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: var(--white-color);
+  border: none;
 }
 
-.contact-item:nth-child(1)::before{
+.button-icon{
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 16px;
   height: 12px;
-  background-image: url(../images/envelope\ \(hover\).svg);
-  /* background-color:#2196F3; */
 }
 
-.contact-item:nth-child(2)::before{
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.svg);
-  /* background-color:#757575; */
+.button-icon:hover{
+  color: var(--hover-color);
 }
-
 
 /* Вирівнювання контактів */
 .contacts{
@@ -296,6 +292,11 @@ li {
   text-align: center;
 
   background-color: var(--section-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 /* Кнопкa з головної сторінки */
@@ -336,6 +337,12 @@ li {
 
 .button-filter :not(:last-child){
   margin-right: 8px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -393,34 +400,28 @@ li {
   margin-right: 50px;
 }
 
+.action{
+display: flex;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
 /* Іконки переваг */
-.advantage-name::before{
-  display: block;
-  content: '';
+.button-advantage{
+  padding: 0;
+  border: none;
+  width: 270px;
   height: 120px;
-  /* outline: 1px solid red; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #F5F4FA;
+  color: #212121;
+  background: #F5F4FA;
   border-radius: 4px;
-  
 }
 
-.advantage-name:nth-child(1)::before{
-  background-image: url(../images/antenna\ 1.svg);
-}
-
-.advantage-name:nth-child(2)::before{
-  background-image: url(../images/clock\ 1.svg);
-}
-
-.advantage-name:nth-child(3)::before{
-  background-image: url(../images/diagram\ 1.svg);
-}
-
-.advantage-name:nth-child(4)::before{
-  background-image: url(../images/astronaut\ 1.svg);
+.icon-advantage{
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
 }
 
 /* Вирівнювання секцій */
@@ -480,6 +481,35 @@ li {
   letter-spacing: 0.03em;
 }
 
+/* Іконки соцмереж команди */
+.button-team{
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  color: #212121;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
+.button-team:hover,
+.button-team:focus{
+  color: var(--hover-color);
+}
+
+.icon-team{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-links{
+  display: flex;
+  margin: auto;
+  padding: auto;
+  color: #AFB1B8;
+}
+
 /* Межі посад і П.І.Б */
 .team-border{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); 
@@ -526,6 +556,9 @@ li {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.project-shadow:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-item:nth-child(3n){
